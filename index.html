@@ -26,6 +26,11 @@
           <a href="index.html" class="logo"
             >Web<span class="logo-half">Studio</span></a
           >
+          <button type="button" class="burger-menu-open">
+            <svg class="burger-menu-icon" width="15" height="17">
+              <use href="./images/icons.svg#burger-menu"></use>
+            </svg>
+          </button>
           <ul class="navbar-list">
             <li class="navbar-list-item">
               <a href="./index.html" class="navbar-list-item-link-one"
@@ -440,7 +445,6 @@
             </label>
             <button type="submit" class="vault-subscribe-submit">
               Subscribe
-              <!--<span class="vault-subscribe-submit-text">Subscribe</span>-->
               <svg width="24" height="24" class="icon-button-send">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
@@ -449,7 +453,91 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay">
+    <div class="modal-overlay-menu is-open-menu">
+      <button type="button" class="modal-callback-widget-close">
+        <svg class="modal-callback-widget-close-icon" height="8" width="8">
+          <use href="./images/icons.svg#icon-close-callback"></use>
+        </svg>
+      </button>
+      <ul class="modal-overlay-menu-navbar-list">
+        <li class="modal-overlay-menu-navbar-list-item">
+          <a
+            href="./index.html"
+            class="modal-overlay-menu-navbar-list-item-link-one"
+            >Studio</a
+          >
+        </li>
+        <li class="modal-overlay-menu-navbar-list-item">
+          <a href="" class="modal-overlay-menu-navbar-list-item-link"
+            >Portfolio</a
+          >
+        </li>
+        <li class="modal-overlay-menu-navbar-list-item">
+          <a href="" class="modal-overlay-menu-navbar-list-item-link"
+            >Contacts</a
+          >
+        </li>
+      </ul>
+
+      <address class="modal-overlay-menu-contacts">
+        <ul class="modal-overlay-menu-contacts-list">
+          <li class="contacts-list-item">
+            <a href="mailto:info@devstudio.com" class="contacts-list-item-link"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="contacts-list-item">
+            <a href="tel:+110001111111" class="contacts-list-item-link"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+        </ul>
+      </address>
+
+      <ul class="modal-overlay-menu-box-icon-vault">
+        <li class="modal-overlay-menu-box-icon-vault-item">
+          <a
+            href="https://www.instagram.com/"
+            class="modal-overlay-menu-box-icon-vault-item-link"
+          >
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal-overlay-menu-box-icon-vault-item">
+          <a
+            href="https://x.com/"
+            class="modal-overlay-menu-box-icon-vault-item-link"
+          >
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal-overlay-menu-box-icon-vault-item">
+          <a
+            href="https://www.facebook.com/"
+            class="modal-overlay-menu-box-icon-vault-item-link"
+          >
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="modal-overlay-menu-box-icon-vault-item">
+          <a
+            href="https://www.linkedin.com/"
+            class="modal-overlay-menu-box-icon-vault-item-link"
+          >
+            <svg class="icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="modal-overlay is-open">
       <div class="modal">
         <button type="button" class="modal-callback-widget-close">
           <svg class="modal-callback-widget-close-icon" height="8" width="8">

@@ -103,6 +103,10 @@ header .container {
   display: none;
 }
 
+.contacts-list-item-link {
+  font-size: 20px;
+}
+
 .heading {
   background-color: #2e2f42;
   display: flex;
@@ -937,6 +941,7 @@ textarea.modal-callback-widget-form-input {
   .container-vault {
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: start;
     gap: 24px;
     row-gap: 72px;
   }
@@ -1007,6 +1012,10 @@ textarea.modal-callback-widget-form-input {
   .contacts-list {
     flex-direction: row;
     gap: 40px;
+  }
+
+  .contacts-list-item-link {
+    font-size: 16px;
   }
 
   .heading {

@@ -128,7 +128,7 @@ header .container {
 .heading-title {
   color: white;
   font-weight: 700;
-  font-size: 56px;
+  font-size: 36px;
   text-align: center;
   line-height: 1.07;
   letter-spacing: 0.02em;
@@ -880,6 +880,10 @@ textarea.modal-callback-widget-form-input {
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/Dark-bg-tablet.jpg);
+  }
+
+  .heading-title {
+    font-size: 56px;
   }
 
   .heading-order {

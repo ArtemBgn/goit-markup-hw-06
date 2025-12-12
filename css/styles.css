@@ -49,8 +49,8 @@ img {
 
 .chairman {
   border-bottom: 1px solid #e7e9fc;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  /*padding-top: 16px;
+  padding-bottom: 16px;*/
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
@@ -76,6 +76,8 @@ header .container {
   letter-spacing: 0.03em;
   display: inline-block;
   margin-right: auto;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo-half {
@@ -86,7 +88,7 @@ header .container {
   background-color: transparent;
   border: none;
   box-shadow: none;
-  padding: 0;
+  padding: 16px 0;
   margin-left: 0;
   display: inline-block;
 }
@@ -105,6 +107,8 @@ header .container {
 
 .contacts-list-item-link {
   font-size: 20px;
+  /*padding-top: 16px;
+  padding-bottom: 16px;*/
 }
 
 .heading {
@@ -160,7 +164,7 @@ header .container {
   width: 100%;
 }
 
-.profit .title-cluster {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -169,7 +173,7 @@ header .container {
   padding: 0;
   white-space: nowrap;
   clip-path: inset(100%);
-  clip: rect(0 0 0 0);
+  clip: rect(0, 0, 0, 0);
   overflow: hidden;
 }
 
@@ -806,6 +810,7 @@ textarea.modal-callback-widget-form-input {
   }
 
   .navbar-list-item-link {
+    display: block;
     position: relative;
     font-weight: 500;
     font-size: 16px;
@@ -821,7 +826,7 @@ textarea.modal-callback-widget-form-input {
     font-size: 16px;
     color: #404bbf;
     letter-spacing: 0.02em;
-    padding: 24px 0;
+    padding: 16px 0;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
@@ -863,6 +868,7 @@ textarea.modal-callback-widget-form-input {
   }
 
   .contacts-list-item-link {
+    padding: 16px 0;
     letter-spacing: 0.02em;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
@@ -1000,10 +1006,10 @@ textarea.modal-callback-widget-form-input {
 }
 
 @media (min-width: 1158px) {
-  .chairman {
+  /*.chairman {
     padding-top: 24px;
     padding-bottom: 24px;
-  }
+  }*/
 
   .navbar-list-item-link-one::after {
     bottom: -1px;
@@ -1017,8 +1023,12 @@ textarea.modal-callback-widget-form-input {
     flex-direction: row;
     gap: 40px;
   }
+  .navbar-list-item-link-one {
+    padding: 24px 0;
+  }
 
   .contacts-list-item-link {
+    padding: 24px 0;
     font-size: 16px;
   }
 

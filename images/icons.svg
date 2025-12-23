@@ -66,14 +66,35 @@
 <symbol id="icon-close-callback" viewBox="0 0 8 8">
 <path fill="" d="M8 .8 7.2 0 4 3.2.8 0 0 .8 3.2 4 0 7.2l.8.8L4 4.8 7.2 8l.8-.8L4.8 4z"/>
 </symbol>
-<symbol id="icon-input-placeholder-name" viewBox="0 0 12 12">
-<path fill="" d="M6 6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m0 1.5c-2 0-6 1-6 3v.8q0 .6.8.7h10.5q.6 0 .7-.7v-.8c0-2-4-3-6-3"/>
+<symbol id="icon-input-placeholder-name" viewBox="0 0 18 18">
+<g clip-path="url(#a)">
+<path d="M9 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6m0 1.5c-2 0-6 1-6 3v.8q0 .6.8.7h10.5q.6 0 .7-.7v-.8c0-2-4-3-6-3"/>
+</g>
+<defs>
+<clipPath id="a">
+<path fill="#fff" d="M0 0h18v18H0z"/>
+</clipPath>
+</defs>
 </symbol>
-<symbol id="icon-input-placeholder-phone" viewBox="0 0 13 13">
-<path fill="" d="M11.7 8.9 10 8.7q-.7-.2-1.2.4l-1.3 1.3Q4.2 8.8 2.6 5.6l1.3-1.3q.6-.5.5-1.2L4 1.3Q4 0 2.7 0H1.5Q0 .1 0 1.5C.4 7.7 5.3 12.6 11.5 13q1.3-.1 1.5-1.4v-1.3q0-1.2-1.3-1.4"/>
+<symbol id="icon-input-placeholder-phone" viewBox="0 0 18 24">
+<g clip-path="url(#a)">
+<path d="m14.7 13.9-1.8-.2q-.8-.2-1.2.4l-1.3 1.3q-3.2-1.6-4.8-4.8l1.3-1.3q.6-.5.5-1.2L7 6.3Q7 5 5.7 5H4.5Q3 5.2 3 6.5c.4 6.2 5.3 11.1 11.5 11.5q1.3-.1 1.5-1.4v-1.3q0-1.2-1.3-1.4"/>
+</g>
+<defs>
+<clipPath id="a">
+<path fill="#fff" d="M0 0h18v24H0z"/>
+</clipPath>
+</defs>
 </symbol>
-<symbol id="icon-input-placeholder-mail" viewBox="0 0 15 12">
-<path fill="" d="M13.5 0h-12Q.2.1 0 1.5v9q.1 1.4 1.5 1.5h12q1.4-.1 1.5-1.5v-9Q14.9.2 13.5 0m-.3 3.2L7.9 6.5q-.4.3-.8 0L1.8 3.2a.6.6 0 1 1 .7-1l5 3 5-3a.6.6 0 1 1 .7 1"/>
+<symbol id="icon-input-placeholder-mail" viewBox="0 0 18 24">
+<g clip-path="url(#a)">
+<path d="M15 6H3q-1.3.2-1.5 1.5v9Q1.7 17.9 3 18h12q1.4-.1 1.5-1.5v-9Q16.4 6.2 15 6m-.3 3.2-5.3 3.3q-.4.3-.8 0L3.3 9.2a.6.6 0 1 1 .7-1l5 3 5-3a.6.6 0 1 1 .7 1"/>
+</g>
+<defs>
+<clipPath id="a">
+<path fill="#fff" d="M0 0h18v24H0z"/>
+</clipPath>
+</defs>
 </symbol>
 <symbol id="checkbox-icon" viewBox="0 0 10 7">
 <path fill="" d="m8 .2.6-.2q.5 0 .6.2l.3.6q0 .3-.2.6L4.6 6.7l-.3.2a1 1 0 0 1-1-.2L.4 4 0 3.6a1 1 0 0 1 .2-.9l.2-.1a1 1 0 0 1 1 .2L4 5z"/>

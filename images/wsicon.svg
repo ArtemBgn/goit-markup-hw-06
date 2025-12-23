@@ -1,0 +1,27 @@
+<svg viewBox="0 0 250 150" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .letter {
+      stroke: #ccff00; /* Ярко-лимонный */
+      stroke-width: 6;
+      stroke-linejoin: round;
+      stroke-linecap: round;
+    }
+  </style>
+
+  <path class="letter" 
+    d="M30 40 L55 110 L80 60 L105 110 L130 40" 
+    fill="none" 
+    stroke="#4d5ae5" 
+    stroke-width="12" />
+  <path d="M30 40 L55 110 L80 60 L105 110 L130 40" 
+    fill="none" 
+    stroke="#4d5ae5" 
+    stroke-width="12" 
+    class="letter" />
+
+  <path class="letter" 
+    d="M230 45 C230 20, 170 20, 170 45 C170 70, 230 80, 230 105 C230 130, 170 130, 170 105" 
+    fill="none" 
+    stroke="#2e2f42" 
+    stroke-width="12" />
+</svg>

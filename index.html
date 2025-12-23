@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Webstudio</title>
+    <link rel="shortcut icon" href="./images/wsicon.svg" type="image/svg+xml" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
@@ -20,11 +21,12 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <!-- header -->
     <header class="chairman">
       <div class="container">
         <nav class="navbar">
           <a href="index.html" class="logo"
-            >Web<span class="logo-half">Studio</span></a
+            >Web<span class="logo-dark">Studio</span></a
           >
           <button type="button" class="burger-menu-open">
             <svg class="burger-menu-icon" width="15" height="17">
@@ -33,29 +35,27 @@
           </button>
           <ul class="navbar-list">
             <li class="navbar-list-item">
-              <a href="./index.html" class="navbar-list-item-link-one"
+              <a href="./index.html" class="navbar-item-link link-one"
                 >Studio</a
               >
             </li>
             <li class="navbar-list-item">
-              <a href="" class="navbar-list-item-link">Portfolio</a>
+              <a href="" class="navbar-item-link">Portfolio</a>
             </li>
             <li class="navbar-list-item">
-              <a href="" class="navbar-list-item-link">Contacts</a>
+              <a href="" class="navbar-item-link">Contacts</a>
             </li>
           </ul>
         </nav>
         <address class="contacts">
           <ul class="contacts-list">
             <li class="contacts-list-item">
-              <a
-                href="mailto:info@devstudio.com"
-                class="contacts-list-item-link"
+              <a href="mailto:info@devstudio.com" class="contacts-item-link"
                 >info@devstudio.com</a
               >
             </li>
             <li class="contacts-list-item">
-              <a href="tel:+110001111111" class="contacts-list-item-link"
+              <a href="tel:+110001111111" class="contacts-item-link"
                 >+11 (000) 111-11-11</a
               >
             </li>
@@ -64,12 +64,16 @@
       </div>
     </header>
     <main>
+      <!-- hero -->
       <section class="heading">
         <div class="container">
-          <h1 class="heading-title">Effective Solutions for Your Business</h1>
+          <h1 class="heading-title">
+            Effective Solutions for&#160;Your Business
+          </h1>
           <button type="button" class="heading-order">Order Service</button>
         </div>
       </section>
+      <!-- profit -->
       <section class="profit">
         <div class="container">
           <h2 class="title-cluster visually-hidden">Our advantages</h2>
@@ -125,38 +129,46 @@
           </ul>
         </div>
       </section>
+      <!-- team -->
       <section class="team">
         <div class="container">
           <h2 class="title-cluster">Our Team</h2>
           <ul class="team-list">
             <li class="team-list-item">
-              <img src="./images/mark.jpg" alt="Mark Guerrero" />
-              <div class="team-list-item-text">
+              <img
+                srcset="
+                  ./images/teams/mark.jpg    1x,
+                  ./images/teams/mark@2x.jpg 2x
+                "
+                src="./images/teams/mark.jpg"
+                alt="Mark Guerrero"
+              />
+              <div class="team-item-text">
                 <h3 class="title-cluster-down">Mark Guerrero</h3>
                 <p class="text">Product Designer</p>
                 <ul class="box-icon-team">
-                  <li class="box-icon-team-item">
+                  <li class="box-icon-item">
                     <a href="https://www.instagram.com/" class="icon-link">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="box-icon-team-item">
+                  <li class="box-icon-item">
                     <a href="https://x.com/" class="icon-link">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="box-icon-team-item">
+                  <li class="box-icon-item">
                     <a href="https://www.facebook.com/" class="icon-link">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="box-icon-team-item">
+                  <li class="box-icon-item">
                     <a href="https://www.linkedin.com/" class="icon-link">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -167,8 +179,12 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/tom.jpg" alt="Tom Ford" />
-              <div class="team-list-item-text">
+              <img
+                srcset="./images/teams/tom.jpg 1x, ./images/teams/tom@2x.jpg 2x"
+                src="./images/teams/tom.jpg"
+                alt="Tom Ford"
+              />
+              <div class="team-item-text">
                 <h3 class="title-cluster-down">Tom Ford</h3>
                 <p class="text">Frontend Developer</p>
                 <ul class="box-icon-team">
@@ -204,8 +220,15 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/camila.jpg" alt="Camila Garcia" />
-              <div class="team-list-item-text">
+              <img
+                srcset="
+                  ./images/teams/camila.jpg    1x,
+                  ./images/teams/camila@2x.jpg 2x
+                "
+                src="./images/teams/camila.jpg"
+                alt="Camila Garcia"
+              />
+              <div class="team-item-text">
                 <h3 class="title-cluster-down">Camila Garcia</h3>
                 <p class="text">Marketing</p>
                 <ul class="box-icon-team">
@@ -241,33 +264,40 @@
               </div>
             </li>
             <li class="team-list-item">
-              <img src="./images/daniel.jpg" alt="Daniel Wilson" />
-              <div class="team-list-item-text">
+              <img
+                srcset="
+                  ./images/teams/daniel.jpg    1x,
+                  ./images/teams/daniel@2x.jpg 2x
+                "
+                src="./images/teams/daniel.jpg"
+                alt="Daniel Wilson"
+              />
+              <div class="team-item-text">
                 <h3 class="title-cluster-down">Daniel Wilson</h3>
                 <p class="text">UI Designer</p>
                 <ul class="box-icon-team">
-                  <li class="box-icon-team-item">
+                  <li class="box-icon-item">
                     <a href="https://www.instagram.com/" class="icon-link">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="box-icon-team-item">
+                  <li class="box-icon-item">
                     <a href="https://x.com/" class="icon-link">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="box-icon-team-item">
+                  <li class="box-icon-item">
                     <a href="https://www.facebook.com/" class="icon-link">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="box-icon-team-item">
+                  <li class="box-icon-item">
                     <a href="https://www.linkedin.com/" class="icon-link">
                       <svg class="icon" width="16" height="16">
                         <use href="./images/icons.svg#icon-linkedin"></use>
@@ -280,96 +310,229 @@
           </ul>
         </div>
       </section>
+      <!-- briefcase -->
       <section class="briefcase">
         <div class="container">
           <h2 class="title-cluster">Our Portfolio</h2>
           <ul class="briefcase-list">
             <li class="briefcase-list-item">
-              <div class="briefcase-list-item-img">
-                <img src="./images/banking-app.jpg" alt="Banking App" />
-                <p class="briefcase-list-item-description">
+              <div class="briefcase-item-img">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/banking-app.jpg    1x,
+                      ./images/projects/banking-app@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767.98px)"
+                    srcset="
+                      ./images/projects/banking-app-mobile.jpg    1x,
+                      ./images/projects/banking-app-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    srcset="
+                      ./images/projects/banking-app.jpg    1x,
+                      ./images/projects/banking-app@2x.jpg 2x
+                    "
+                    src="./images/projects/banking-app.jpg"
+                    alt="Banking App"
+                  />
+                </picture>
+                <p class="briefcase-item-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="briefcase-list-item-text">
+              <div class="briefcase-item-text">
                 <h3 class="title-cluster-down">Banking App</h3>
                 <p class="text">App</p>
               </div>
             </li>
             <li class="briefcase-list-item">
-              <div class="briefcase-list-item-img">
-                <img
-                  src="./images/cashless-payment.jpg"
-                  alt="Cashless Payment"
-                />
-                <p class="briefcase-list-item-description">
+              <div class="briefcase-item-img">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/cashless-payment.jpg    1x,
+                      ./images/projects/cashless-payment@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767.98px)"
+                    srcset="
+                      ./images/projects/cashless-payment-mobile.jpg    1x,
+                      ./images/projects/cashless-payment-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    srcset="
+                      ./images/projects/cashless-payment.jpg    1x,
+                      ./images/projects/cashless-payment@2x.jpg 2x
+                    "
+                    src="./images/projects/cashless-payment.jpg"
+                    alt="Cashless Payment"
+                  />
+                </picture>
+                <p class="briefcase-item-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="briefcase-list-item-text">
+              <div class="briefcase-item-text">
                 <h3 class="title-cluster-down">Cashless Payment</h3>
                 <p class="text">Marketing</p>
               </div>
             </li>
             <li class="briefcase-list-item">
-              <div class="briefcase-list-item-img">
-                <img src="./images/meditation-app.jpg" alt="Meditation App" />
-                <p class="briefcase-list-item-description">
+              <div class="briefcase-item-img">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/meditation-app.jpg    1x,
+                      ./images/projects/meditation-app@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767.98px)"
+                    srcset="
+                      ./images/projects/meditation-app-mobile.jpg    1x,
+                      ./images/projects/meditation-app-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    srcset="
+                      ./images/projects/meditation-app.jpg    1x,
+                      ./images/projects/meditation-app@2x.jpg 2x
+                    "
+                    src="./images/projects/meditation-app.jpg"
+                    alt="Meditation App"
+                  />
+                </picture>
+                <p class="briefcase-item-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="briefcase-list-item-text">
+              <div class="briefcase-item-text">
                 <h3 class="title-cluster-down">Meditation App</h3>
                 <p class="text">App</p>
               </div>
             </li>
             <li class="briefcase-list-item">
-              <div class="briefcase-list-item-img">
-                <img src="./images/taxi-service.jpg" alt="Taxi Service" />
-                <p class="briefcase-list-item-description">
+              <div class="briefcase-item-img">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/taxi-service.jpg    1x,
+                      ./images/projects/taxi-service@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767.98px)"
+                    srcset="
+                      ./images/projects/taxi-service-mobile.jpg    1x,
+                      ./images/projects/taxi-service-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    srcset="
+                      ./images/projects/taxi-service.jpg    1x,
+                      ./images/projects/taxi-service@2x.jpg 2x
+                    "
+                    src="./images/projects/taxi-service.jpg"
+                    alt="Taxi Service"
+                  />
+                </picture>
+                <p class="briefcase-item-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="briefcase-list-item-text">
+              <div class="briefcase-item-text">
                 <h3 class="title-cluster-down">Taxi Service</h3>
                 <p class="text">Marketing</p>
               </div>
             </li>
             <li class="briefcase-list-item">
-              <div class="briefcase-list-item-img">
-                <img
-                  src="./images/screen-illustrations.jpg"
-                  alt="Screen Illustrations"
-                />
-                <p class="briefcase-list-item-description">
+              <div class="briefcase-item-img">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/screen-illustrations.jpg    1x,
+                      ./images/projects/screen-illustrations@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767.98px)"
+                    srcset="
+                      ./images/projects/screen-illustrations-mobile.jpg    1x,
+                      ./images/projects/screen-illustrations-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    srcset="
+                      ./images/projects/screen-illustrations.jpg    1x,
+                      ./images/projects/screen-illustrations@2x.jpg 2x
+                    "
+                    src="./images/projects/screen-illustrations.jpg"
+                    alt="Screen Illustrations"
+                  />
+                </picture>
+                <p class="briefcase-item-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="briefcase-list-item-text">
+              <div class="briefcase-item-text">
                 <h3 class="title-cluster-down">Screen Illustrations</h3>
                 <p class="text">Design</p>
               </div>
             </li>
             <li class="briefcase-list-item">
-              <div class="briefcase-list-item-img">
-                <img src="./images/online-courses.jpg" alt="Online Courses" />
-                <p class="briefcase-list-item-description">
+              <div class="briefcase-item-img">
+                <picture>
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/projects/online-courses.jpg    1x,
+                      ./images/projects/online-courses@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width: 767.98px)"
+                    srcset="
+                      ./images/projects/online-courses-mobile.jpg    1x,
+                      ./images/projects/online-courses-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    srcset="
+                      ./images/projects/online-courses.jpg    1x,
+                      ./images/projects/online-courses@2x.jpg 2x
+                    "
+                    src="./images/projects/online-courses.jpg"
+                    alt="Online Courses"
+                  />
+                </picture>
+                <p class="briefcase-item-description">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
                   · Cloud Storage App
                 </p>
               </div>
-              <div class="briefcase-list-item-text">
+              <div class="briefcase-item-text">
                 <h3 class="title-cluster-down">Online Courses</h3>
                 <p class="text">Marketing</p>
               </div>
@@ -378,11 +541,12 @@
         </div>
       </section>
     </main>
+    <!-- footer -->
     <footer class="vault">
       <div class="container container-vault">
         <div class="box-logo-vault">
           <a href="index.html" class="logo"
-            >Web<span class="logo-half">Studio</span></a
+            >Web<span class="logo-light">Studio</span></a
           >
           <p class="text">
             Increase the flow of customers and sales for your business with
@@ -390,40 +554,31 @@
           </p>
         </div>
         <div class="box-social-vault">
-          <p class="box-social-vault-text">Social media</p>
+          <p class="box-social-text">Social media</p>
           <ul class="box-icon-vault">
-            <li class="box-icon-vault-item">
-              <a
-                href="https://www.instagram.com/"
-                class="box-icon-vault-item-link"
-              >
+            <li class="box-icon-item">
+              <a href="https://www.instagram.com/" class="box-icon-link">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="box-icon-vault-item">
-              <a href="https://x.com/" class="box-icon-vault-item-link">
+            <li class="box-icon-item">
+              <a href="https://x.com/" class="box-icon-link">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="box-icon-vault-item">
-              <a
-                href="https://www.facebook.com/"
-                class="box-icon-vault-item-link"
-              >
+            <li class="box-icon-item">
+              <a href="https://www.facebook.com/" class="box-icon-link">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="box-icon-vault-item">
-              <a
-                href="https://www.linkedin.com/"
-                class="box-icon-vault-item-link"
-              >
+            <li class="box-icon-item">
+              <a href="https://www.linkedin.com/" class="box-icon-link">
                 <svg class="icon" width="24" height="24">
                   <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
@@ -432,15 +587,15 @@
           </ul>
         </div>
         <div class="box-subscribe-vault">
-          <p class="box-social-vault-text">Subscribe</p>
-          <form class="box-subscribe-vault-form">
-            <label class="box-subscribe-vault-form-label">
+          <p class="box-social-text">Subscribe</p>
+          <form class="box-subscribe-form">
+            <label class="subscribe-form-label">
               <input
                 name="subscribe-email"
                 type="email"
                 id="subscribe-email"
                 placeholder="E-mail"
-                class="box-subscribe-vault-input"
+                class="box-subscribe-input"
               />
             </label>
             <button type="submit" class="vault-subscribe-submit">
@@ -453,83 +608,66 @@
         </div>
       </div>
     </footer>
-    <div class="modal-overlay-menu">
-      <button type="button" class="modal-callback-widget-close">
-        <svg class="modal-callback-widget-close-icon" height="8" width="8">
+    <!-- modal mobile menu -->
+    <div class="modal-menu">
+      <button type="button" class="modal-close">
+        <svg class="modal-close-icon" height="8" width="8">
           <use href="./images/icons.svg#icon-close-callback"></use>
         </svg>
       </button>
-      <ul class="modal-overlay-menu-navbar-list">
-        <li class="modal-overlay-menu-navbar-list-item">
-          <a
-            href="./index.html"
-            class="modal-overlay-menu-navbar-list-item-link-one"
+      <ul class="modal-menu-list">
+        <li class="modal-navbar-litem">
+          <a href="./index.html" class="modal-item-link modal-link-one"
             >Studio</a
           >
         </li>
-        <li class="modal-overlay-menu-navbar-list-item">
-          <a href="" class="modal-overlay-menu-navbar-list-item-link"
-            >Portfolio</a
-          >
+        <li class="modal-navbar-litem">
+          <a href="" class="modal-item-link">Portfolio</a>
         </li>
-        <li class="modal-overlay-menu-navbar-list-item">
-          <a href="" class="modal-overlay-menu-navbar-list-item-link"
-            >Contacts</a
-          >
+        <li class="modal-navbar-litem">
+          <a href="" class="modal-item-link">Contacts</a>
         </li>
       </ul>
 
-      <address class="modal-overlay-menu-contacts">
-        <ul class="modal-overlay-menu-contacts-list">
+      <address class="modal-menu-contacts">
+        <ul class="modal-contacts-list">
           <li class="contacts-list-item">
-            <a href="mailto:info@devstudio.com" class="contacts-list-item-link"
+            <a href="mailto:info@devstudio.com" class="contacts-item-link"
               >info@devstudio.com</a
             >
           </li>
           <li class="contacts-list-item">
-            <a href="tel:+110001111111" class="contacts-list-item-link"
+            <a href="tel:+110001111111" class="contacts-item-link"
               >+11 (000) 111-11-11</a
             >
           </li>
         </ul>
       </address>
 
-      <ul class="modal-overlay-menu-box-icon-vault">
-        <li class="modal-overlay-menu-box-icon-vault-item">
-          <a
-            href="https://www.instagram.com/"
-            class="modal-overlay-menu-box-icon-vault-item-link"
-          >
+      <ul class="modal-icon-vault">
+        <li class="modal-icon-item">
+          <a href="https://www.instagram.com/" class="modal-item-vlink">
             <svg class="icon" width="24" height="24">
               <use href="./images/icons.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
-        <li class="modal-overlay-menu-box-icon-vault-item">
-          <a
-            href="https://x.com/"
-            class="modal-overlay-menu-box-icon-vault-item-link"
-          >
+        <li class="modal-icon-item">
+          <a href="https://x.com/" class="modal-item-vlink">
             <svg class="icon" width="24" height="24">
               <use href="./images/icons.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
-        <li class="modal-overlay-menu-box-icon-vault-item">
-          <a
-            href="https://www.facebook.com/"
-            class="modal-overlay-menu-box-icon-vault-item-link"
-          >
+        <li class="modal-icon-item">
+          <a href="https://www.facebook.com/" class="modal-item-vlink">
             <svg class="icon" width="24" height="24">
               <use href="./images/icons.svg#icon-facebook"></use>
             </svg>
           </a>
         </li>
-        <li class="modal-overlay-menu-box-icon-vault-item">
-          <a
-            href="https://www.linkedin.com/"
-            class="modal-overlay-menu-box-icon-vault-item-link"
-          >
+        <li class="modal-icon-item">
+          <a href="https://www.linkedin.com/" class="modal-item-vlink">
             <svg class="icon" width="24" height="24">
               <use href="./images/icons.svg#icon-linkedin"></use>
             </svg>
@@ -537,119 +675,97 @@
         </li>
       </ul>
     </div>
+    <!-- modal form -->
     <div class="modal-overlay">
       <div class="modal">
-        <button type="button" class="modal-callback-widget-close">
-          <svg class="modal-callback-widget-close-icon" height="8" width="8">
+        <button type="button" class="modal-close">
+          <svg class="modal-close-icon" height="8" width="8">
             <use href="./images/icons.svg#icon-close-callback"></use>
           </svg>
         </button>
-        <p class="modal-callback-widget-form-name">
+        <p class="callback-widget-name">
           Leave your contacts and we will call you back
         </p>
-        <form class="modal-callback-widget-form">
-          <div class="modal-callback-widget-form-div-input-label">
-            <label for="user-name" class="modal-callback-widget-form-label"
-              >Name</label
-            >
-            <div class="for-modal-callback-widget-icon-placeholder">
+        <form class="callback-widget-form">
+          <div class="callback-widget-label">
+            <label for="user-name" class="callback-form-label">Name</label>
+            <div class="callback-icon-placeholder">
               <input
                 type="text"
                 name="user-name"
                 id="user-name"
-                class="modal-callback-widget-form-input"
+                class="callback-form-input"
               />
-              <svg
-                class="modal-callback-widget-icon-placeholder-svg"
-                height="24"
-                width="18"
-              >
+              <svg class="widget-placeholder-svg" height="24" width="18">
                 <use
                   href="./images/icons.svg#icon-input-placeholder-name"
                 ></use>
               </svg>
             </div>
           </div>
-          <div class="modal-callback-widget-form-div-input-label">
-            <label for="user-tel" class="modal-callback-widget-form-label"
-              >Phone</label
-            >
-            <div class="for-modal-callback-widget-icon-placeholder">
+          <div class="callback-widget-label">
+            <label for="user-tel" class="callback-form-label">Phone</label>
+            <div class="callback-icon-placeholder">
               <input
                 type="tel"
                 name="user-tel"
                 id="user-tel"
-                class="modal-callback-widget-form-input"
+                class="callback-form-input"
               />
-              <svg
-                class="modal-callback-widget-icon-placeholder-svg"
-                height="24"
-                width="18"
-              >
+              <svg class="widget-placeholder-svg" height="24" width="18">
                 <use
                   href="./images/icons.svg#icon-input-placeholder-phone"
                 ></use>
               </svg>
             </div>
           </div>
-          <div class="modal-callback-widget-form-div-input-label">
-            <label for="user-email" class="modal-callback-widget-form-label"
-              >Email</label
-            >
-            <div class="for-modal-callback-widget-icon-placeholder">
+          <div class="callback-widget-label">
+            <label for="user-email" class="callback-form-label">Email</label>
+            <div class="callback-icon-placeholder">
               <input
                 type="email"
                 name="user-email"
                 id="user-email"
-                class="modal-callback-widget-form-input"
+                class="callback-form-input"
               />
-              <svg
-                class="modal-callback-widget-icon-placeholder-svg"
-                height="24"
-                width="18"
-              >
+              <svg class="widget-placeholder-svg" height="24" width="18">
                 <use
                   href="./images/icons.svg#icon-input-placeholder-mail"
                 ></use>
               </svg>
             </div>
           </div>
-          <div class="modal-callback-widget-form-div-input-label fourth">
-            <label for="user-comment" class="modal-callback-widget-form-label"
+          <div class="callback-widget-label fourth">
+            <label for="user-comment" class="callback-form-label"
               >Comment</label
             >
             <textarea
               name="user-comment"
               id="user-comment"
-              class="modal-callback-widget-form-input for-text"
+              class="callback-form-input for-text"
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="modal-callback-widget-form-group-checkbox">
+          <div class="callback-widget-checkbox">
             <input
               type="checkbox"
               name="user-privacy"
               id="user-privacy"
               value="true"
               checked
-              class="modal-callback-widget-form-input-checkbox visually-hidden"
+              class="input-checkbox visually-hidden"
             />
-            <label
-              for="user-privacy"
-              class="modal-callback-widget-form-label-checkbox"
-            >
-              <span class="modal-callback-widget-form-label-checkbox-icon">
+            <label for="user-privacy" class="widget-label-checkbox">
+              <span class="widget-checkbox-icon">
                 <svg class="custom-checkbox-icon" height="8" width="10">
                   <use
                     href="./images/icons.svg#checkbox-icon"
                   ></use></svg></span
               >I accept the terms and conditions of the
-              <a href="#" class="modal-callback-widget-form-label-checkbox-link"
-                >Privacy Policy</a
-              >
+              <a href="#" class="widget-checkbox-link">Privacy Policy</a>
             </label>
           </div>
-          <button type="submit" class="modal-callback-form-submit">Send</button>
+          <button type="submit" class="callback-submit">Send</button>
         </form>
       </div>
     </div>
